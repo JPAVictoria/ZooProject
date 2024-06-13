@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: FjallaOne-Regular;
+    src: url(/font-styles/FjallaOne-Regular.ttf);
+  }
+
+@font-face {
+    font-family: nunito-bold;
+    src: url(/font-styles/Nunito-Bold.ttf);
+  }
+  
+@font-face {
+    font-family: nunito-regular;
+    src: url(/font-styles/Nunito-Regular.ttf);
+  }

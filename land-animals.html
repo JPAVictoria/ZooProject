@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoonimation</title>
+    <link rel="stylesheet" href="animals.css">
+    <link rel="stylesheet" href="font-style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+     <div class="header">
+
+        <div class="header-name">
+            <h1 class="title-header"><a href="landing-page.html" id="land">Zoonimation</a></h1>
+        </div>
+
+        <div class="nav-bar">  
+            <ul class="navigation">
+                <li><a href="land-animals.html">Land</a></li>
+                <li><a href="water-animals.html">Water</a></li>
+                <li><a href="air-animals.html">Air</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!---HEADER CODE ABOVE-->
+
+
+    <audio id="catAudio">
+        <source src="/audio/land-audio/cat meow.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+        <div class="image-container">
+            <img src="images/elements/land.png" alt="land-background" class="background">
+            <img src="images/animals/land/cat.png" alt="cat" class="land-animals">
+        </div>
+
+        <div class="content-container">
+            <div class="animal-heading">
+                <h1 class="land-animal">Cat</h1>
+            </div>
+            <div class="animal-information">
+                <p class="text-info">Cats are graceful and independent animals known for their agility and<br> curiosity. They are 
+                    often admired for their sleek fur, sharp senses, and<br> playful yet mysterious demeanor. Cats make excellent 
+                    companions,<br> providing both affection and a touch of elegance to any home, 
+                    while<br> also being known for their ability to keep themselves entertained and<br> clean.
+                </p>
+            </div>
+        </div>
+
+        <div class="button-containers">
+            <button class="button-sound" type="button" id="catSound" onclick="playCat()"><img src="/images/land-sound.png" alt="land-sound"></button>
+            <button class="button-video" type="button" id="catVideo"><img src="/images/land-video.png" alt="land-sound"></button>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
+
+
+        <script>
+            var catSound = document.getElementById("catAudio"); 
+            function playCat() { 
+                catSound.play(); 
+            } 
+        </script>
+
+
+        <!---CAT CODE ABOVE-->
+
+        <audio id="dogAudio">
+            <source src="/audio/land-audio/dog bark.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+        <div class="image-container">
+            <img src="images/elements/land.png" alt="land-background" class="background">
+            <img src="images/animals/land/dog.png" alt="dog" class="dog-image">
+        </div>
+
+        <div class="content-container">
+            <div class="animal-heading">
+                <h1 class="land-animal">Dog</h1>
+            </div>
+            <div class="animal-information">
+                <p class="text-info">Dogs are loyal and affectionate companions known for their playful<br> and friendly nature. 
+                    They come in a variety of breeds, each with unique<br> characteristics and temperaments. Often called "man's best friend,"<br> 
+                    dogs are valued for their ability to form strong bonds with humans,<br> 
+                    their intelligence, and their versatility as working animals and beloved<br> pets.
+                </p>
+            </div>
+        </div>
+
+        <div class="button-containers">
+            <button class= "dog-sound" type="button" id="dogSound" onclick="playDog()"><img src="/images/land-sound.png" alt="land-sound"></button>
+            <button class= "dog-video" type="button" id="dogVideo"><img src="/images/land-video.png" alt="land-sound"></button>
+        </div>
+
+
+        <script>
+            var dogSound = document.getElementById("dogAudio"); 
+            function playDog() { 
+                dogSound.play(); 
+            } 
+        </script>
+        
+        <!---DOG CODE ABOVE-->
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <audio id="tigerAudio">
+            <source src="/audio/land-audio/tiger growl.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+        <div class="image-container">
+            <img src="images/elements/land.png" alt="land-background" class="background">
+            <img src="images/animals/land/tiger.png" alt="tiger" class="dog-image">
+        </div>
+
+        <div class="content-container">
+            <div class="animal-heading">
+                <h1 class="land-animal">Tiger</h1>
+            </div>
+            <div class="animal-information">
+                <p class="text-info">Tigers are powerful and majestic big cats, easily recognized by their<br> striking 
+                    orange coats with black stripes. As apex predators, they are<br> known for their strength, stealth, and solitary nature. 
+                    Tigers are a<br> symbol of wild beauty and conservation efforts worldwide aim to<br> protect these magnificent creatures and their 
+                    habitats from the threat<br> of extinction.
+                </p>
+            </div>
+        </div>
+
+        <div class="button-containers">
+            <button class="dog-sound" type="button" id="tigerSound" onclick="playTiger()"><img src="/images/land-sound.png" alt="land-sound"></button>
+            <button class="dog-video" type="button" id="tigerVideo"><img src="/images/land-video.png" alt="land-sound"></button>
+        </div>
+
+        <script>
+            var tigerSound = document.getElementById("tigerAudio"); 
+            function playTiger() { 
+                tigerSound.play(); 
+            } 
+        </script>
+
+        <!---TIGER CODE ABOVE-->
+
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn" class="close">&times;</span>
+              <iframe id="catFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/gK40aqPw1iY?si=0lbufaUCBeMVSr9r" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe id="dogFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/xNdxbfbl4RA?si=9IMIaDu_9nUVA63w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe id="tigerFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/r8eFRI0WMZk?si=i-m6jthgG19W2BXz" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        <script src="modal.js"></script>
+
+
+</body>
+</html>

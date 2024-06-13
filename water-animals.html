@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoonimation</title>
+    <link rel="stylesheet" href="animals.css">
+    <link rel="stylesheet" href="font-style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="header-name">
+            <h1 class="title-header"><a href="landing-page.html" id="water">Zoonimation</a></h1>
+        </div>
+
+        <div class="nav-bar">  
+            <ul class="navigation">
+                <li><a href="land-animals.html">Land</a></li>
+                <li><a href="water-animals.html">Water</a></li>
+                <li><a href="air-animals.html">Air</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <audio id="penguinAudio">
+        <source src="/audio/water-audio/penguin sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div class="image-container">
+        <img src="images/elements/water.png" alt="water-background" class="background">
+        <img src="images/animals/water/penguin.png" alt="penguin" class="water-image" id="penguinn">
+    </div>
+
+    <div class="content-container">
+        <div class="animal-heading">
+            <h1 class="water-animal">Penguin</h1>
+        </div>
+        <div class="animal-information">
+            <p class="text-info">Penguins are charming, flightless birds renowned for their distinctive<br> black and white plumage and 
+                waddling gait. Inhabiting the Southern<br> Hemisphere, penguins thrive in cold climates and are adept swimmers.<br> They are 
+                highly social animals, often forming large colonies, and are<br> celebrated for their 
+                endurance and unique parenting behaviors,<br> especially their care of chicks in harsh environments
+            </p>
+        </div>
+    </div>
+
+    <div class="button-containers">
+        <button class="water-sound" type="button" id="penguinSound" onclick="playPenguin()"><img src="/images/water-sound.png" alt="water-sound"></button>
+        <button class="water-video" type="button" id="penguinVideo"><img src="/images/water-video.png" alt="water-sound"></button>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+
+    <script>
+        var penguinSound = document.getElementById("penguinAudio"); 
+        function playPenguin() { 
+            penguinSound.play(); 
+        } 
+    </script>
+
+
+    <!---PENGUIN CODE ABOVE-->
+
+    <audio id="whaleAudio">
+        <source src="/audio/water-audio/whale sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+
+    <div class="image-container">
+        <img src="images/elements/water.png" alt="water-background" class="background">
+        <img src="images/animals/water/whale.png" alt="whale" class="water-image">
+    </div>
+
+    <div class="content-container">
+        <div class="animal-heading">
+            <h1 class="water-animal">Whale</h1>
+        </div>
+        <div class="animal-information">
+            <p class="text-info">Whales are the largest animals on Earth, known for their majestic<br> presence and deep, melodic songs. These 
+                gentle giants inhabit oceans<br> around the globe and come in various species, including the massive<br> blue whale and the acrobatic 
+                humpback whale. Whales play a crucial<br> role in marine ecosystems, and their migratory patterns and behaviors<br> continue to fascinate 
+                scientists and nature enthusiasts alike.
+            </p>
+        </div>
+    </div>
+
+    <div class="button-containers">
+        <button class="water-sound" type="button" id="whaleSound" onclick="playWhale()"><img src="/images/water-sound.png" alt="water-sound"></button>
+        <button class="water-video" type="button" id="whaleVideo"><img src="/images/water-video.png" alt="water-sound"></button>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+
+    
+    <script>
+        var whaleSound = document.getElementById("whaleAudio"); 
+        function playWhale() { 
+            whaleSound.play(); 
+        } 
+    </script>
+
+    <!---WHALE CODE ABOVE-->
+
+    <audio id="dolphinAudio">
+        <source src="/audio/water-audio/dolphin noise.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div class="image-container">
+        <img src="images/elements/water.png" alt="water-background" class="background">
+        <img src="images/animals/water/dolphin.png" alt="dolphin" class="water-image" id="dolphy">
+    </div>
+
+    <div class="content-container">
+        <div class="animal-heading">
+            <h1 class="water-animal">Dolphin</h1>
+        </div>
+        <div class="animal-information">
+            <p class="text-info">Dolphins are intelligent and sociable marine mammals known for their<br> playful behavior and acrobatic skills. These sleek, 
+                streamlined<br> creatures are highly adaptable, living in both coastal and open ocean<br> waters. 
+                With their exceptional communication abilities and strong<br> social bonds, dolphins captivate humans with their friendly and curious<br> nature.
+            </p>
+        </div>
+    </div>
+
+    <div class="button-containers">
+        <button class="water-sound" type="button" id="dolphinSound" onclick="playDolphin()"><img src="/images/water-sound.png" alt="water-sound"></button>
+        <button class="water-video" type="button" id="dolphinVideo"><img src="/images/water-video.png" alt="water-sound"></button>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    
+    <script>
+        var dolphinSound = document.getElementById("dolphinAudio"); 
+        function playDolphin() { 
+            dolphinSound.play(); 
+        } 
+    </script>
+
+
+    <!---DOLPHIN CODE ABOVE-->
+
+
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span id="closeBtn" class="close">&times;</span>
+          <iframe id="penguinFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/wfYLmxIJKRw?si=h0INWJxTDVVME0Ow" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="whaleFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/RA4GZ1OL1cc?si=62ORFTc0iNx0dCFF" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="dolphinFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/ZHvcF2cJRYM?si=FSROotIwJ9-XsJbv" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    <script src="water-modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+
+*
+{ 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+.header-name {
+    flex: 1;
+    margin-left: 130px;
+}
+
+.title-header {
+    margin: 0;
+    font-size: 36px;
+}
+
+.title-header a{
+    text-decoration: none;
+    font-family: Fjalla One;
+    color: #ffd31a;
+}
+
+.title-header a:hover{
+
+
+        color: #3d3d3d;
+        transition: all 0.5s ease 0s;
+
+}
+
+
+.nav-bar {
+    flex: 2;
+    text-align: right;
+    margin-right: 130px;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin-left: 180px;
+    font-family: nunito-bold;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #3d3d3d;
+}
+
+li a:hover{
+    transition: all 0.5s ease 0s;
+}
+
+li:nth-child(1) a:hover{
+    color: #55883B;
+}
+
+li:nth-child(2) a:hover{
+    color: #1CA3EC;
+}
+
+li:nth-child(3) a:hover{
+    color: #D8E1E1;
+}
+
+#land{
+
+    color: #55883B;
+}
+
+#water{
+
+    color: #1CA3EC;
+}
+
+#air{
+
+    color: #D8E1E1;
+}
+
+#land:hover, #water:hover, #air:hover{
+
+    color: #3d3d3d;
+    transition: all 0.5s ease 0s;
+    
+}
+
+/**HEADER CODE ABOVE **/
+
+
+.image-container{
+
+    margin-top: 150px;
+    float: left;
+}
+
+.background{
+
+    width: 750px;
+    height: 450px;
+    margin-left: -250px;
+}
+
+.land-animals{
+
+    width: 70%;
+    height: 30%;
+    margin-left: -400px;
+    z-index: 1;
+}
+
+.dog-image{
+
+    margin-left: -500px;
+    z-index: 1;
+}
+
+.dog-sound{
+
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 80px;
+
+}
+
+.dog-video{
+
+
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 180px;
+
+}
+
+.dog-sound img, .dog-video img{
+
+    width: 100px;
+    height: 50px;
+
+}
+
+.dog-sound img:hover{
+    
+    cursor: pointer;
+}
+
+.dog-video img:hover{
+    
+    cursor: pointer;
+}
+
+.content-container{
+    margin-top: 180px;
+    margin-left: 50%;
+}
+
+.land-animal, .animal-information{
+    padding: 10px 10px;
+}
+
+.land-animal{
+
+    font-family: Fjalla One;
+    color: #55883B;
+    font-size: 48px;
+
+}
+
+.animal-information{
+
+    font-family: nunito-regular;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.9rem;
+    color: #3d3d3d;
+    margin-top: 10px;
+}
+
+
+.button-sound{
+
+
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 150px;
+}
+
+.button-sound img{
+
+    width: 100px;
+    height: 50px;
+
+}
+
+.button-sound img:hover{
+    
+    cursor: pointer;
+}
+
+.button-video{
+
+
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 250px;
+}
+
+.button-video img{
+    width: 100px;
+    height: 50px;
+}
+
+.button-video img:hover{
+    cursor: pointer;
+}
+
+
+#dolphy, #penguinn{
+
+    transform: scaleX(-1);
+
+}
+
+
+
+/**WATER PAGE CODE BELOW */
+
+
+.water-image{
+
+    margin-left: -550px;
+    z-index: 1;
+
+}
+
+.water-animal, .animal-information{
+    padding: 10px 10px;
+}
+
+.water-animal{
+
+    font-family: Fjalla One;
+    color: #1CA3EC;
+    font-size: 48px;
+
+}
+
+
+
+.water-sound{
+
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 135px;
+
+}
+
+.water-video{
+
+
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 235px;
+
+}
+
+.water-video img, .water-sound img{
+    width: 100px;
+    height: 50px;
+}
+
+.water-video img:hover, .water-sound img:hover{
+    cursor: pointer;
+}
+
+
+/**AIR PAGE CODE BELOW*/
+
+
+#crow{
+
+
+    width: 666px;
+    height: 600px;
+
+}
+
+
+.air-container{
+
+    float: left;
+}
+
+
+.air-animal{
+    padding: 10px 10px;
+}
+
+.air-animal{
+
+    font-family: Fjalla One;
+    color: #D8E1E1;
+    font-size: 48px;
+
+}
+
+.air-content-container{
+    margin-top: 180px;
+    margin-left: 49.5%;
+}
+
+
+#eagle, #hawk{
+
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+

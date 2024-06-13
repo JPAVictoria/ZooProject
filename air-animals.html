@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoonimation</title>
+    <link rel="stylesheet" href="animals.css">
+    <link rel="stylesheet" href="font-style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="header-name">
+            <h1 class="title-header"><a href="landing-page.html" id="air">Zoonimation</a></h1>
+        </div>
+
+        <div class="nav-bar">  
+            <ul class="navigation">
+                <li><a href="land-animals.html">Land</a></li>
+                <li><a href="water-animals.html">Water</a></li>
+                <li><a href="air-animals.html">Air</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!---HEADER CODE ABOVE-->
+
+    <audio id="crowAudio">
+        <source src="/audio/air-audio/crow sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+
+    <div class="air-container">
+        <img src="images/elements/air.png" alt="air-background" class="background">
+        <img src="images/animals/air/crow.png" alt="crow" class="water-image" id="crow">
+    </div>
+
+    <div class="air-content-container">
+        <div class="animal-heading">
+            <h1 class="air-animal">Crow</h1>
+        </div>
+        <div class="animal-information">
+            <p class="text-info">Crows are highly intelligent and adaptable birds recognized for their<br> glossy black feathers and complex social structures. 
+                Found in many<br> parts of the world, they thrive in both urban and rural environments.<br> Known for their problem-solving 
+                abilities and varied vocalizations,<br> crows often display behaviors that suggest a high level of cognitive<br> function and social interaction.
+            </p>
+        </div>
+    </div>
+
+    <div class="button-containers">
+        <button class="water-sound" type="button" id="crowSound" onclick="playCrow()"><img src="/images/air-sound.png" alt="air-sound"></button>
+        <button class="water-video" type="button" id="crowVideo"><img src="/images/air-video.png" alt="air-video"></button>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <script>
+        var crowSound = document.getElementById("crowAudio"); 
+        function playCrow() { 
+            crowSound.play(); 
+        } 
+    </script>
+
+    <!---CROW CODE ABOVE-->
+
+    <audio id="eagleAudio">
+        <source src="/audio/air-audio/eagle sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+
+    <div class="image-container">
+            <img src="images/elements/air.png" alt="air-background" class="background">
+            <img src="images/animals/air/eagle.png" alt="eagle" class="land-animals" id="eagle">
+        </div>
+
+        <div class="content-container">
+            <div class="animal-heading">
+                <h1 class="air-animal">Eagle</h1>
+            </div>
+            <div class="animal-information">
+                <p class="text-info">Eagles are powerful and majestic birds of prey, symbolizing strength<br> and freedom. With their impressive wingspans 
+                    and sharp talons,<br> eagles are skilled hunters, often seen soaring at great heights. They<br> inhabit diverse environments, from mountains 
+                    to coastal regions.<br> Renowned for their keen vision and formidable presence, eagles hold a<br> revered place in many cultures and 
+                    ecosystems around the world.
+                </p>
+            </div>
+        </div>
+
+        <div class="button-containers">
+            <button class="button-sound" type="button" id="eagleSound" onclick="playEagle()"><img src="/images/air-sound.png" alt="air-sound"></button>
+            <button class="button-video" type="button" id="eagleVideo"><img src="/images/air-video.png" alt="air-video"></button>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <script>
+            var eagleSound = document.getElementById("eagleAudio"); 
+            function playEagle() { 
+                eagleSound.play(); 
+            } 
+        </script>
+
+
+    <!---EAGLE CODE ABOVE-->
+
+    <audio id="hawkAudio">
+        <source src="/audio/air-audio/hawk sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div class="image-container">
+        <img src="images/elements/air.png" alt="air-background" class="background">
+        <img src="images/animals/air/hawl.png" alt="hawk" class="land-animals" id="hawk">
+    </div>
+
+    <div class="content-container">
+        <div class="animal-heading">
+            <h1 class="air-animal">Hawk</h1>
+        </div>
+        <div class="animal-information">
+            <p class="text-info">Hawks are agile and keen-eyed birds of prey, known for their<br> impressive hunting skills and swift flight. 
+                These raptors can be found<br> in a variety of habitats, from forests to open plains. With their super<br> sharp talons and keen vision, 
+                hawks are innate adept hunters, often<br> spotted soaring high in the sky or perched in trees, scanning for their<br> next meal.
+            </p>
+        </div>
+    </div>
+
+    <div class="button-containers">
+        <button class="button-sound" type="button" id="hawkSound" onclick="playHawk()"><img src="/images/air-sound.png" alt="air-sound"></button>
+        <button class="button-video" type="button" id="hawkVideo"><img src="/images/air-video.png" alt="air-video"></button>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <script>
+        var hawkSound = document.getElementById("hawkAudio"); 
+        function playHawk() { 
+            hawkSound.play(); 
+        } 
+    </script>
+<!---HAWK CODE ABOVE-->
+
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <iframe id="crowFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/zGKfvz5zrtM?si=CFhTRY_clxRxY1UD" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="eagleFrame" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/iPwPLPI1L6k?si=nU9VeRne1ZnMCAae" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="hawkFrame" width="560" height="310" frameborder="0" src="https://www.youtube.com/embed/IHih8gZZ52g?si=VLAHhDywoiGS0p5r" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+<script src="air-modal.js"></script>
+
+
+
+
+</body>
+</html>

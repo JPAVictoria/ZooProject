@@ -1,0 +1,51 @@
+OLEA WEBSITE
+
+
+
+FONT STYLES:
+
+
+Header: Fjalla One
+Paragraphs: Libre Baskerville
+
+
+Color Combinations:
+
+
+Landing Page:
+
+
+Header - #ffd31a
+Paragraph - #3d3d3d
+Background - #ffffff
+
+
+Land Page:
+
+Header - #C1E899
+Paragraph - #3d3d3d
+Background (Buttons)  - #55883B
+Background - #ffffff
+
+
+Water Page:
+
+Header - #0f5e9c
+Paragraph - #3d3d3d
+Background (Buttons)  - #1ca3ec
+Background - #ffffff
+
+Air Page:
+
+Header - #eaeaea
+Paragraph - #3d3d3d
+Background (Buttons) - #e0fffe
+Background - #ffffff
+
+
+
+
+
+
+
+
